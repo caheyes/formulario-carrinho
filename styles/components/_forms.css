@@ -1,0 +1,71 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 14px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+
+  margin-bottom: 20px;
+}
+
+/*radio*/
+.radio__options {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  margin-bottom: 20px;
+}
+
+.radio__options__op {
+  position: relative;
+  padding-left: 30px; 
+  cursor: pointer; 
+  font-size: 14px; 
+  color: var(--white); 
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.custom-radio {
+  display: inline-block;
+  width: 20px;
+  height: 20px; 
+  border: 2px solid var(--primary);
+  border-radius: 50%; 
+  background-color: var(--white);
+  transition: background-color 0.2s ease; 
+  position: absolute;
+  left: 0;
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+input[type="radio"]:checked + label .custom-radio {
+  background-color: var(--primary); 
+}
+
+.custom-radio:after {
+  content: "";
+  display: none; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px; 
+  border-radius: 50%; 
+  background: var(--white); 
+  transform: translate(-50%, -50%); 
+}
+
+input[type="radio"]:checked + label .custom-radio:after {
+  display: block; 
+}

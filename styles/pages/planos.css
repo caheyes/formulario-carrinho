@@ -1,0 +1,94 @@
+@import url('../_index.css');
+
+body {
+  background: var(--black-020);
+}
+
+.t-plans__list {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  padding: 40px 60px;
+}
+
+.t-plans__list__plan {
+  background: var(--black-010);
+  border: 2px solid var(--black);
+  border-radius: 5px;
+}
+
+.t-plans__list__plan__details {
+  height: 230px;
+  padding: 12px 20px;
+}
+
+.t-plans__list__plan__details h2 {
+  font-size: 16px;
+  font-weight: 100;
+  color: var(--white);
+
+  margin-bottom: 8px;
+}
+
+.t-plans__list__plan__details h3 {
+  font-size: 26px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.t-plans__list__plan__block__info {
+  font-size: 14px;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.t-plans__list__plan__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black);
+
+  gap: 5px;
+  padding: 40px 20px;
+}
+
+.t-plans__list__plan__block span,
+.t-plans__list__plan__block p { 
+  color: var(--white);
+}
+
+.t-plans__list__plan__block p {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.button-primary {
+  width: 100%;
+  font-size: 18px;
+}
+
+@media (max-width: 1162px) {
+  .t-plans__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .t-plans__top__title {
+    font-size: 22px;
+  }
+
+  .t-plans__list {
+    grid-template-columns: 1fr;   
+  }
+}
+
+@media (max-width: 630px) {
+  .t-plans__list {
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Noto Serif";
+  background: linear-gradient(to right, var(--black) 60%, var(--black-010) 130%);
+}

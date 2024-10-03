@@ -1,0 +1,11 @@
+.head {
+  background: linear-gradient(to right, var(--black) 60%, var(--black-010) 130%);
+  padding: 40px 60px;
+}
+
+.head__title {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/pages/pagar.css">
+  <title>Technologie - Planos</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./planos.html" class="active">Planos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="t-plans">
+    <div class="head">
+      <h1 class="head__title">Assine o Plano</h1>
+    </div>
+    <form class="p-payment">
+      <div class="p-payment__content">
+        <div class="p-payment__content__top">
+          <h2>Dados</h2>
+          <img src="./src/icons/user-regular.svg" alt="Icone usuário">
+        </div>
+        <input type="text" id="name" name="name" placeholder="Nome" required>
+        <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Senha" required>
+      </div>
+      <div class="p-payment__content">
+        <div class="p-payment__content__top">
+          <h2>Pagamento</h2>
+          <img src="./src/icons/money-bill-solid.svg" alt="Icone usuário">
+        </div>
+        <div class="radio__options">
+          <div class="radio__options__op">
+            <input type="radio" id="ticket" name="payment-method" value="boleto">
+            <label for="ticket">
+              <span class="custom-radio"></span>
+              Boleto
+            </label>
+          </div>
+          <div class="radio__options__op">
+            <input type="radio" id="number-credit" name="payment-method" value="credit-card">
+            <label for="number-credit">
+              <span class="custom-radio"></span>
+              Débito em conta
+            </label>
+          </div>
+        </div>
+        <input type="text" name="agency" placeholder="Agência">
+        <input type="text" name="account" placeholder="Conta">
+      </div>
+      <div>
+        <button type="submit" class="button-primary">Assinar</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
